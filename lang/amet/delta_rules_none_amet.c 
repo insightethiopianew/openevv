@@ -1,0 +1,57 @@
+/* Amharic Text-to-Speech Rules for OpenEVV / Eloquence Engine */
+#include "amet.sets"
+
+void process_amharic_phonemes(unsigned short unicode_char) {
+    switch(unicode_char) {
+        /* ----- ሀ ቤተሰብ (Ha Family) ----- */
+        case CHAR_HA_1: // ሀ
+            emit_phoneme("h"); emit_phoneme("ax"); break;
+        case CHAR_HU:   // ሁ
+            emit_phoneme("h"); emit_phoneme("uw"); break;
+        case CHAR_HI:   // ሂ
+            emit_phoneme("h"); emit_phoneme("iy"); break;
+        case CHAR_HAA:  // ሃ
+            emit_phoneme("h"); emit_phoneme("aa"); break;
+        case CHAR_HE:   // ሄ
+            emit_phoneme("h"); emit_phoneme("ey"); break;
+        case CHAR_H:    // ህ
+            emit_phoneme("h"); break;
+        case CHAR_HO:   // ሆ
+            emit_phoneme("h"); emit_phoneme("ow"); break;
+
+        /* ----- ለ ቤተሰብ (La Family) ----- */
+        case CHAR_LA:   // ለ
+            emit_phoneme("l"); emit_phoneme("ax"); break;
+        case CHAR_LU:   // ሉ
+            emit_phoneme("l"); emit_phoneme("uw"); break;
+        case CHAR_LI:   // ሊ
+            emit_phoneme("l"); emit_phoneme("iy"); break;
+        case CHAR_LAA:  // ላ
+            emit_phoneme("l"); emit_phoneme("aa"); break;
+        case CHAR_LE:   // ሌ
+            emit_phoneme("l"); emit_phoneme("ey"); break;
+        case CHAR_L:    // ል
+            emit_phoneme("l"); break;
+        case CHAR_LO:   // ሎ
+            emit_phoneme("l"); emit_phoneme("ow"); break;
+
+        /* ----- በ ቤተሰብ (Ba Family) ----- */
+        case CHAR_BA:   // በ
+            emit_phoneme("b"); emit_phoneme("ax"); break;
+        case CHAR_BU:   // ቡ
+            emit_phoneme("b"); emit_phoneme("uw"); break;
+        case CHAR_BI:   // ቢ
+            emit_phoneme("b"); emit_phoneme("iy"); break;
+        case CHAR_BAA:  // ባ
+            emit_phoneme("b"); emit_phoneme("aa"); break;
+        case CHAR_BE:   // ቤ
+            emit_phoneme("b"); emit_phoneme("ey"); break;
+        case CHAR_B:    // ብ
+            emit_phoneme("b"); break;
+        case CHAR_BO:   // ቦ
+            emit_phoneme("b"); emit_phoneme("ow"); break;
+
+        default:
+            break;
+    }
+}
