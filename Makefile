@@ -44,7 +44,8 @@ SRCDIRS := $(SRC) $(patsubst %/,%,$(wildcard $(SRC)/*/ $(SRC)/*/*/))
 # Not LANG: that is what a shell calls the locale, and `?=' lets the
 # environment win, so an ordinary LANG=en_GB.UTF-8 sends the build looking for
 # a language module of that name and it fails outright. EVVLANG is ours.
-EVVLANG ?= lang/enus
+EVVLANG ?= lang/enus lang/amet
+
 LANG  := $(EVVLANG)
 LANGS ?= $(LANG)
 TAG   := $(notdir $(firstword $(LANGS)))
