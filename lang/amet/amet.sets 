@@ -1,0 +1,29 @@
+/* Amharic Character Set Definition for Eloquence */
+/* Ethiopic Unicode Range: 0x1200 - 0x137C */
+
+/* Ha Family */
+#define CHAR_HA_1  0x1200 // ሀ
+#define CHAR_HU    0x1201 // ሁ
+#define CHAR_HI    0x1202 // ሂ
+#define CHAR_HAA   0x1203 // ሃ
+#define CHAR_HE    0x1204 // ሄ
+#define CHAR_H    0x1205 // ህ
+#define CHAR_HO    0x1206 // ሆ
+
+/* La Family */
+#define CHAR_LA    0x1208 // ለ
+#define CHAR_LU    0x1209 // ሉ
+#define CHAR_LI    0x120A // ሊ
+#define CHAR_LAA   0x120B // ላ
+#define CHAR_LE    0x120C // ሌ
+#define CHAR_L     0x120D // ል
+#define CHAR_LO    0x120E // ሎ
+
+/* Ba Family */
+#define CHAR_BA    0x1260 // በ
+#define CHAR_BU    0x1261 // ቡ
+#define CHAR_BI    0x1262 // ቢ
+#define CHAR_BAA   0x1263 // ባ
+#define CHAR_BE    0x1264 // ቤ
+#define CHAR_B     0x1265 // ብ
+#define CHAR_BO    0x1266 // ቦ
